@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Internship Application</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+
+  <meta charset="utf-8">
+
+</head>
+<body><header>
+<h2>Internship Application</h2></header>
+
+<p class="dis">please fill out the form below and hit submit to be considered for the Internship.</p>
+
+<form  id="diss" method="post" action="#" onsubmit="return checkforembty()" >
+  <fieldset class="f1" >
+    <legend class="nam">Personalia:</legend>
+    <label for="fname" class="cont">First name:</label>
+    <input type="text" id="fname" name="fname" onclick="return type0()" class="box"><br>
+
+    <label for="lname" class="cont">Last name:</label>
+    <input type="text" id="lname" name="lname" onclick="return type1()" disabled="disabled" class="box"><br>
+
+    <label for="Personal-Website" class="cont">Personal Website:</label>
+  <input type="url" id="Personal-Website" name="Personal Website" class="box"><br>
+
+    <label for="phone" class="cont">Enter a phone number:</label>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="box"><br>
+
+    <label for="email" class="cont">Enter your email:</label>
+  <input type="email" id="email" name="email" onclick="return type2()" disabled="disabled" class="box"><br>
+
+  <label for="UserName" class="cont">UserName:</label>
+    <input type="text" id="UserName" name="UserName" onclick="return type3()" disabled="disabled" class="box"><br>
+
+     <label for="pwd" class="cont">Password:</label>
+  <input type="password" id="pwd" name="pwd" onclick="return type4()" disabled="disabled" class="box"><br>
+
+ </fieldset><br><br>
+
+  <fieldset class="f2">
+    <legend class="nam">Education:</legend><br>
+  <label for="ree" class="cont">Degree:</label>
+  <input list="Degree" name="Degree" class="box" id="ree">
+  <datalist id="Degree">
+    <option value="Associate">
+    <option value="Bachelor">
+    <option value="Masters">
+    <option value="Ph.D.">
+    <option value="other">
+  </datalist><br>
+
+  <label for="graduate" class="cont">When will you graduate:</label>
+  <input type="date" id="graduate" name="date" max="2022-05-07" class="box"><br>
+
+
+  <label for="files" class="cont">Upload your CV and other documents:</label><br>
+  <input type="file" id="files" name="files" multiple class="box">
+
+
+
+ </fieldset><br>
+<input type="submit" value="Submit" class="butt">
+<input type="button" value="save" onclick="find()" class="butt1">
+<input type="reset" class="butt2">
+
+
+
+</form>
+  
+<script type="text/javascript" src="jsfile.js"></script>
+
+<footer>
+<p id="done" class="dis"></p>
+<button onclick="document.location='index.html'" class="lin2">Previous page</button>
+</footer>
+
+</body>
+
+</html>
